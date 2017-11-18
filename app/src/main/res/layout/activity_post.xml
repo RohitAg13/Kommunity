@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:elevation="2dp"
+
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/tw__install_button_border" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/etTitle"
+        android:layout_below="@+id/imageButton"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:padding="4dp"
+        android:background="@drawable/input_line"
+        android:hint="Post Title..." />
+
+    <EditText
+        android:id="@+id/etDesc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/etTitle"
+        android:layout_margin="8dp"
+        android:padding="4dp"
+        android:background="@drawable/input_line"
+        android:ems="10"
+        android:hint="Description..."
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/bSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:background="@color/authui_colorPrimary"
+        />
+
+    <ProgressBar
+        android:id="@+id/progresspost"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>
